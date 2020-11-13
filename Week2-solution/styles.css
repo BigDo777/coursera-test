@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+
+.title {
+	text-align: center;
+}
+
+.row {
+	width: 100%;
+}
+p {
+	border: 1px solid black;
+	/*background-color*/
+	width: 90%;
+	height: 150px;
+	margin-right: auto; /*pakeist veliau*/
+	margin-left: auto; /*pakeist veliau*/
+}
+
+/***Desktop version***/
+@media (min-width: 992px) {
+	.desktop-version {
+		float: left;
+		border: 1px solid red;
+		width: 33%;
+	}
+}
+
+/***Tablet version***/
+@media (min-width: 768px) and (max-width: 991px) {
+	.tablet-version {
+		float: left;
+		border: 1px solid red;
+		width: 50%;
+	}
+
+	.third-section {
+		width: 100%;
+	}
+}
+
+/***Mobile version***/
+@media (max-width: 767px) {
+	.tablet-version {
+		float: left;
+		border: 1px solid red;
+		width: 100%;
+	}
+}
