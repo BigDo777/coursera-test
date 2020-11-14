@@ -1,5 +1,10 @@
 * {
 	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;
+}
+
+body {
+	padding: 0;
 }
 
 .title {
@@ -8,14 +13,15 @@
 
 .row {
 	width: 100%;
+	margin-left: 7px;
 }
 p {
 	border: 1px solid black;
 	/*background-color*/
 	width: 90%;
-	height: 150px;
-	margin-right: auto; /*pakeist veliau*/
-	margin-left: auto; /*pakeist veliau*/
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /***Desktop version***/
@@ -38,11 +44,15 @@ p {
 	.third-section {
 		width: 100%;
 	}
+
+	.row {
+		margin: 0;
+	}
 }
 
 /***Mobile version***/
 @media (max-width: 767px) {
-	.tablet-version {
+	.mobile-version {
 		float: left;
 		border: 1px solid red;
 		width: 100%;
