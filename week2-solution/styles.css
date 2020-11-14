@@ -1,39 +1,80 @@
 * {
 	box-sizing: border-box;
 	font-family: 'Nunito', sans-serif;
-}
-
-body {
-	padding: 0;
+	font-size: 15px;
 	margin: 0;
 }
 
 .title {
+	font-size: 175%;
 	text-align: center;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
 .row {
 	width: 100%;
 }
-p {
+
+.cars {
+	background-color: green;
+}
+
+.boats {
+	background-color: yellow;
+}
+
+.planes {
+	background-color: red;
+}
+
+.section-title {
+	font-size: 125%;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	margin: 0;
+	margin-top: -1px;
+	margin-right: -1px;
 	border: 1px solid black;
-	/*background-color*/
+	width: 20%;
+	text-align: center;
+}
+
+.container1,
+.container2,
+.container3 {
+	position: relative;
+	border: 1px solid black;
 	width: 90%;
 	height: auto;
-	margin-left: auto;
 	margin-right: auto;
+	margin-left: auto;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	background-color: hsl(205, 90%, 88%);
+}
+
+.dummy-text {
+	margin-top: 2rem;
+	width: 90%;
 }
 
 /***Desktop version***/
 @media (min-width: 992px) {
 	.desktop-version {
 		float: left;
-		border: 1px solid red;
-		width: 33%;
+		width: 33.33%;
 	}
 
-	.row {
-		margin-left: 0.5%;
+	/***To make the containers spacing be even***/
+	.container1 {
+		margin-left: 7.55%;
+	}
+	.container3 {
+		margin-right: 7.55%;
 	}
 }
 
@@ -41,7 +82,6 @@ p {
 @media (min-width: 768px) and (max-width: 991px) {
 	.tablet-version {
 		float: left;
-		border: 1px solid red;
 		width: 50%;
 	}
 
@@ -49,8 +89,16 @@ p {
 		width: 100%;
 	}
 
-	.row {
-		margin: 0;
+	.boats-section {
+		width: 93.5%;
+	}
+
+	/***To make the containers spacing be even***/
+	.container1 {
+		margin-left: 6.5%;
+	}
+	.container2 {
+		margin-right: 6.5%;
 	}
 }
 
@@ -58,7 +106,6 @@ p {
 @media (max-width: 767px) {
 	.mobile-version {
 		float: left;
-		border: 1px solid red;
 		width: 100%;
 	}
 }
