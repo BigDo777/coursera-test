@@ -1,0 +1,57 @@
+body {
+	font-size: 16px;
+	font-family: 'Nunito', sans-serif;
+	color: #fff;
+}
+
+/***HEADER***/
+
+#header-nav {
+	background-color: #4e4d48;
+	border-radius: 0;
+	border: 0;
+}
+
+.navbar-brand {
+	height: 120px;
+}
+
+.navbar-brand h1 {
+	color: #fff;
+	font-size: 2em;
+	margin: 26px 0px 0px 0px;
+}
+
+.navbar-brand a {
+	text-decoration: none;
+}
+
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+	border: 1px solid #fff;
+}
+
+.navbar-toggle {
+	margin: 42px 20px 0px 0px;
+}
+
+#nav-list a {
+	background-color: #4e4d48;
+	color: #fff;
+}
+
+#nav-list a:hover {
+	color: #4e4d48;
+	background-color: #fff;
+}
+
+/***HEADER END***/
+
+.text-container {
+	background-color: #4e4d48;
+}
+
+.page-heading {
+	color: #4e4d48;
+	margin-bottom: 30px;
+}
